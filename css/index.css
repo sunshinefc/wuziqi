@@ -1,0 +1,219 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "微软雅黑"; }
+
+/**
+ * Yo框架动画解决方案
+ * Yo内置了超过60种动画形态，不同的动画可以任意组合
+ */
+.ani {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+.ani.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
+
+/**
+ * Yo框架动画解决方案
+ * Yo内置了超过60种动画形态，不同的动画可以任意组合
+ */
+.ani {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+.ani.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
+
+/**
+ * @module fade
+ * @description 定义淡入落下动画
+ * @method fade-in-down
+ */
+@-webkit-keyframes fade-in-down {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0); } }
+
+@keyframes fade-in-down {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0); }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0); } }
+
+.ani.fade-in-down {
+  -webkit-animation-name: fade-in-down;
+  animation-name: fade-in-down; }
+
+.box {
+  background-size: 100% 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-image: url("../img/bg.jpg"); }
+
+canvas {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-size: 100% 100%;
+  background-image: url("../img/pan.png"); }
+
+.button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: 100px;
+  margin-left: -520px; }
+
+.start {
+  width: 133px;
+  height: 40px;
+  background-size: cover;
+  background-image: url("../img/start1.png");
+  cursor: pointer; }
+
+.ai {
+  width: 133px;
+  height: 40px;
+  background-size: cover;
+  background-image: url("../img/renji1.png");
+  margin-top: 27px;
+  cursor: pointer; }
+
+.right-bottom {
+  width: 110px;
+  height: 120px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: 380px;
+  margin-top: 140px; }
+
+.heqi, .huiqi, .renshu {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+  cursor: pointer; }
+
+.heqi {
+  background-size: cover;
+  background-image: url("../img/heqi.png"); }
+
+.huiqi {
+  background-size: cover;
+  background-image: url("../img/huiqi.png"); }
+
+.renshu {
+  background-size: cover;
+  background-image: url("../img/renshu.png"); }
+
+.biao {
+  width: 100px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -180px;
+  margin-left: -500px; }
+  .biao .clock {
+    width: 100%;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url("../img/biao.png");
+    background-size: cover; }
+  .biao .time {
+    width: 100%;
+    height: 35px;
+    background: #fff;
+    position: absolute;
+    border-radius: 15px;
+    margin-top: 70px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 16px; }
+
+.biaoh {
+  width: 100px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -180px;
+  margin-left: 380px; }
+  .biaoh .clockh {
+    width: 100%;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url("../img/biaoh.png");
+    background-size: cover; }
+  .biaoh .time {
+    width: 100%;
+    height: 35px;
+    background: #000;
+    position: absolute;
+    border-radius: 15px;
+    margin-top: 70px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 16px;
+    color: #fff; }
+
+.blackwin, .whitewin, .qipu, .qipub {
+  width: 400px;
+  height: 300px;
+  background-size: cover;
+  background-image: url("../img/heisheng.png");
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: none; }
+
+.whitewin {
+  background-image: url("../img/baisheng.png"); }
+
+.qipu {
+  background-image: url("../img/qipu.png"); }
+  .qipu .yes, .qipu .no {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 35px;
+    left: 90px;
+    z-index: 10;
+    cursor: pointer; }
+  .qipu .no {
+    left: 270px; }
+
+.qipub {
+  background-image: url("../img/qipub.png"); }
+  .qipub .yes, .qipub .no {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 35px;
+    left: 90px;
+    z-index: 10;
+    cursor: pointer; }
+  .qipub .no {
+    left: 270px; }
